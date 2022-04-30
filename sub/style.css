@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	/*
+	background-image: url(../images/NSP.jpg);
+	background-size: cover;*/
+	background: #070c24;
+}
+
+header{
+	height: 70px;	
+	background-image: url(images/.jpg);
+}
+
+header ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.main ul li{
+	display: inline-block;
+}
+
+.main ul li a{
+	text-decoration: none;
+	color:   #fff;
+	padding: 5px 20px;
+	border: 1px solid  transparent;
+	transition: 0.6s ease;
+
+}
+
+.main ul li a:hover{
+	background-color:#fff;
+	color: #333; 
+}
+
+.main ul li.active a{
+	background-color:#fff;
+	color: #333;
+}
+
+.logo img{
+	float: left;
+	width: 130px;
+	height: auto;
+}
+
+.main{
+	max-width: 1200px;
+	height: 20px; 
+	margin: auto;
+}
+
+
+.contain ul li a img{
+	width: 250px;
+	height: 380px;
+	padding: 0;
+	border: 2px  solid #fff;	
+}
+
+.contain ul{
+	
+	list-style-type: none;
+	margin-top: 150px;
+	position: absolute;
+	padding: 10px 100px;
+}
+
+.contain ul li{
+	display: inline-block;
+}
+
+.contain  ul li a{
+	text-decoration: none;
+	color:   #333;
+	padding: 5px 15px;
+	border: 1px solid  transparent;
+	transition: 0.6s ease;
+}
+
+.container{
+	top:8%;
+	left: 15%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1100px;
+	height: 600px;
+	background: #fff;
+	margin: 20px;
+}
+
+.container .imgbx{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	background: #006dbc;
+}
+
+.container .imgbx img{
+	position: relative;
+	width: 450px;
+	height: 600px;
+	left: -50px;
+}
+
+.container .details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+}
+
+.container .details h2{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	line-height: 0.8em;
+	color: #444;
+}
+
+.container .details button{
+	background: #006dbc;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	padding: 15px 20px;
+	margin-top: 5px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 35px;
+	float: right;
+}
+
+.container .details button a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.containt .youtube{
+	top: 10px;
+}
+
