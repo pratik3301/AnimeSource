@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="logincss.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></script>
+
+</head>
+<body>
+	<div class="container">
+	<header>Create an account</header>
+
+	<form name= myform id=form>
+		<div class="input-field">
+          <input type="text" id="uname" required>
+          <label>Username</label>
+           <small>Error MEssage</small>
+        </div>
+         
+        <div class="input-field" method="post" action="#" onsubmit="return validateemail();">
+          <input type="email" id="email" required>
+          <label>Email</label>
+          <small>Error MEssage</small>
+        </div>
+		<div class="input-field">
+          <input class="pswrd" type="password" id="password" required>
+          <span class="show">SHOW</span>
+          <label>Password</label>
+           <small>Error MEssage</small>
+        </div>
+		<div class="input-field" >
+          <input class="pswrd" type="password" id="password2" required>
+          <span class="show">SHOW</span>
+          <label>Confirm Password</label>
+           <small>Error MEssage</small>
+       </div>
+		<div class="button">
+          <div class="inner">
+			</div>
+			<button type="submit">LOGIN</button>
+        </div>
+
+	</form>
+</div>
+<script>
+	function validateemail()  
+	{  
+		var x=document.myform.input-field.email.value;  
+		var atposition=x.indexOf("@");  
+		var dotposition=x.lastIndexOf(".");  
+		if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  		alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  		return false;  
+  }  
+} 
+
+</script>
+</body>
+</html>
